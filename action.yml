@@ -86,7 +86,7 @@ inputs:
     description: "Path to your entitlements file"
     required: false
     default: ""
-  increment-build-number: 
+  increment-build-number:
     description: "Increment the build number before building the application"
     required: false
     default: ""
@@ -118,6 +118,10 @@ inputs:
     description: 'Custom Keychain Name'
     required: false
     default: "ios-build.keychain"
+  clean-before-build:
+    description: 'Clean before build'
+    required: false
+    default: "true"
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"

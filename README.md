@@ -144,6 +144,11 @@ Use a custom destination for building the app. Default `""`. For example, `"gene
 
 Use a custom build path for building the app. Default `"/Users/{user}/Library/Developer/Xcode/Archives/{date}"`. For example, `"./archive"`.
 
+### `clean-before-build`
+
+Clean intermediate files before build. Default `true`
+Set `false` if you're using [xcode-cache](https://github.com/irgaly/xcode-cache)
+
 ### `increment-version-number`
 
 Increment the version number of your project. Supports `"patch"`, `"minor"`, `"major"` or a specific version number. Default `""`.
